@@ -47,7 +47,17 @@ const trackNames = {
     "laguna_seca": "WeatherTech Raceway Laguna Seca",
     "daytona": "Daytona International Speedway",
     "lemans": "Circuit de la Sarthe (Le Mans)",
-    "fuji": "Fuji Speedway"
+    "fuji": "Fuji Speedway",
+    "brands_hatch": "Brands Hatch",
+    "misano": "Misano World Circuit",
+    "nurburgring_gp": "Nürburgring GP",
+    "nordschleife": "Nürburgring Nordschleife",
+    "paul_ricard": "Circuit Paul Ricard",
+    "zolder": "Circuit Zolder",
+    "mount_panorama": "Mount Panorama (Bathurst)",
+    "kyalami": "Kyalami Grand Prix Circuit",
+    "watkins_glen": "Watkins Glen International",
+    "valencia": "Circuit Ricardo Tormo (Valencia)"
 };
 
 const seriesNames = {
@@ -57,7 +67,8 @@ const seriesNames = {
     "wec_prototype": "WEC (Hypercar/LMP1)",
     "wec_gt3": "WEC (LMGT3/GTE)",
     "imsa_gtp": "IMSA (GTP/DPi)",
-    "imsa_gtd": "IMSA (GTD Pro/GTD)"
+    "imsa_gtd": "IMSA (GTD Pro/GTD)",
+    "gt3": "GT3 (SRO / Fanatec / N24)"
 };
 
 fetch('data.json')
