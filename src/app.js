@@ -112,21 +112,28 @@ trackSelect.addEventListener('change', () => {
 });
 
 seriesSelect.addEventListener('change', () => {
-    const track = trackSelect.value;
-    const series = seriesSelect.value;
-    const data = database[track][series];
-    
-    document.getElementById('q-time').textContent = data.quali.time;
-    document.getElementById('q-driver').textContent = data.quali.driver;
-    document.getElementById('q-team').textContent = data.quali.team;
-    document.getElementById('q-year').textContent = data.quali.year;
-    
-    document.getElementById('r-time').textContent = data.race.time;
-    document.getElementById('r-driver').textContent = data.race.driver;
-    document.getElementById('r-team').textContent = data.race.team;
-    document.getElementById('r-year').textContent = data.race.year;
-    
-    resultsContainer.classList.remove('hidden');
+  const track = trackSelect.value;
+  const series = seriesSelect.value;
+  const data = database[track]?.[series];
+
+  if (!data || !data.quali || !data.race) {
+    resultsContainer.classList.add('hidden');
+    noDataContainer.classList.remove('hidden');
+    return;
+  }
+
+  document.getElementById('q-time').textContent = data.quali.time;
+  document.getElementById('q-driver').textContent = data.quali.driver;
+  document.getElementById('q-team').textContent = data.quali.team;
+  document.getElementById('q-year').textContent = data.quali.year;
+
+  document.getElementById('r-time').textContent = data.race.time;
+  document.getElementById('r-driver').textContent = data.race.driver;
+  document.getElementById('r-team').textContent = data.race.team;
+  document.getElementById('r-year').textContent = data.race.year;
+
+  noDataContainer.classList.add('hidden');
+  resultsContainer.classList.remove('hidden');
 });
 
 if ('serviceWorker' in navigator) {
