@@ -65,7 +65,16 @@ fetch('data.json')
     .then(data => {
         database = data;
         trackSelect.innerHTML = '<option value="" disabled selected>Choose a track...</option>';
-        for (const trackKey in database) {
+        
+        // Sort tracks alphabetically based on their display names
+        const sortedTrackKeys = Object.keys(database).sort((a, b) => {
+            const nameA = trackNames[a] || a;
+            const nameB = trackNames[b] || b;
+            return nameA.localeCompare(nameB);
+        });
+
+        // Populate the dropdown using the sorted array
+        for (const trackKey of sortedTrackKeys) {
             const option = document.createElement('option');
             option.value = trackKey;
             option.textContent = trackNames[trackKey] || trackKey; 
