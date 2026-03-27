@@ -1,0 +1,28 @@
+{
+  "name": "FastLap Data Tracker",
+  "short_name": "FastLap",
+  "description": "Track the fastest racing laps across F1, Indycar, IMSA, and WEC.",
+  "start_url": "/index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f4f9",
+  "theme_color": "#d32f2f",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["games", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}

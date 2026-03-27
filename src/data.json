@@ -1,0 +1,70 @@
+{
+  "jeddah": {
+    "f1": {
+      "quali": { "time": "1:27.294", "driver": "Max Verstappen", "team": "Red Bull Racing", "year": "2025" },
+      "race": { "time": "1:30.734", "driver": "Lewis Hamilton", "team": "Mercedes", "year": "2021" }
+    },
+    "f2": {
+      "quali": { "time": "1:40.483", "driver": "Felipe Drugovich", "team": "MP Motorsport", "year": "2022" },
+      "race": { "time": "1:43.098", "driver": "Jack Doohan", "team": "Virtuosi Racing", "year": "2022" }
+    }
+  },
+  "miami": {
+    "f1": {
+      "quali": { "time": "1:26.204", "driver": "Max Verstappen", "team": "Red Bull Racing", "year": "2025" },
+      "race": { "time": "1:29.708", "driver": "Max Verstappen", "team": "Red Bull Racing", "year": "2023" }
+    }
+  },
+  "las_vegas": {
+    "f1": {
+      "quali": { "time": "1:32.310", "driver": "George Russell", "team": "Mercedes", "year": "2024" },
+      "race": { "time": "1:33.365", "driver": "Max Verstappen", "team": "Red Bull Racing", "year": "2025" }
+    }
+  },
+  "qatar": {
+    "f1": {
+      "quali": { "time": "1:23.778", "driver": "Max Verstappen", "team": "Red Bull Racing", "year": "2023" },
+      "race": { "time": "1:22.384", "driver": "Lando Norris", "team": "McLaren", "year": "2024" }
+    },
+    "wec": {
+      "quali": { "time": "1:39.347", "driver": "Matt Campbell", "team": "Porsche Penske", "year": "2024" },
+      "race": { "time": "1:39.757", "driver": "Kamui Kobayashi", "team": "Toyota Gazoo Racing", "year": "2024" }
+    }
+  },
+  "monza": {
+    "f1": {
+      "quali": { "time": "1:18.887", "driver": "Lewis Hamilton", "team": "Mercedes", "year": "2020" },
+      "race": { "time": "1:20.901", "driver": "Lando Norris", "team": "McLaren", "year": "2025" } 
+    },
+    "f2": {
+      "quali": { "time": "1:30.982", "driver": "Callum Ilott", "team": "UNI-Virtuosi", "year": "2020" },
+      "race": { "time": "1:32.354", "driver": "Richard Verschoor", "team": "Trident", "year": "2022" }
+    },
+    "wec": {
+      "quali": { "time": "1:35.358", "driver": "Kamui Kobayashi", "team": "Toyota Gazoo Racing", "year": "2021" },
+      "race": { "time": "1:37.280", "driver": "Mike Conway", "team": "Toyota Gazoo Racing", "year": "2021" }
+    }
+  },
+  "daytona": {
+    "imsa": {
+      "quali": { "time": "1:32.656", "driver": "Pipo Derani", "team": "Action Express Racing", "year": "2024" },
+      "race": { "time": "1:33.685", "driver": "Tom Blomqvist", "team": "Meyer Shank Racing", "year": "2024" }
+    }
+  },
+  "indianapolis_road": {
+    "indycar": {
+      "quali": { "time": "1:08.592", "driver": "Will Power", "team": "Team Penske", "year": "2017" },
+      "race": { "time": "1:09.388", "driver": "Josef Newgarden", "team": "Team Penske", "year": "2017" }
+    },
+    "imsa": {
+      "quali": { "time": "1:14.539", "driver": "Mathieu Jaminet", "team": "Porsche Penske Motorsport", "year": "2023" },
+      "race": { "time": "1:15.540", "driver": "Nick Tandy", "team": "Porsche Penske Motorsport", "year": "2023" }
+    }
+  },
+  "lemans": {
+    "wec": {
+      "quali": { "time": "3:22.982", "driver": "Kamui Kobayashi", "team": "Toyota Gazoo Racing", "year": "2021" },
+      "race": { "time": "3:25.260", "driver": "Sébastien Buemi", "team": "Toyota Gazoo Racing", "year": "2022" }
+    }
+  }
+}

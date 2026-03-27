@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastLap</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#d32f2f">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <header>
+        <h1>🏁 FastLap</h1>
+        <p>Track the ultimate lap times</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="input-group">
+                <label for="track-select">Select Track</label>
+                <select id="track-select">
+                    <option value="" disabled selected>Loading tracks...</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="series-select">Select Series</label>
+                <select id="series-select" disabled>
+                    <option value="" disabled selected>First, choose a track...</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="results-container" class="hidden">
+            <div class="card quali-card">
+                <h3>⏱️ Fastest Qualifying Lap</h3>
+                <p><strong>Time:</strong> <span id="q-time">-</span></p>
+                <p><strong>Driver:</strong> <span id="q-driver">-</span></p>
+                <p><strong>Team:</strong> <span id="q-team">-</span></p>
+                <p><strong>Year:</strong> <span id="q-year">-</span></p>
+            </div>
+            
+            <div class="card race-card">
+                <h3>🏎️ Fastest Race Lap</h3>
+                <p><strong>Time:</strong> <span id="r-time">-</span></p>
+                <p><strong>Driver:</strong> <span id="r-driver">-</span></p>
+                <p><strong>Team:</strong> <span id="r-team">-</span></p>
+                <p><strong>Year:</strong> <span id="r-year">-</span></p>
+            </div>
+        </section>
+        
+        <div id="no-data" class="hidden">
+            <p>No data available for this Track and Series combination.</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
